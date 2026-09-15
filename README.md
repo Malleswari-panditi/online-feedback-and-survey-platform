@@ -1,16 +1,105 @@
-# React + Vite
+# Online Feedback & Survey Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive web application for creating surveys, collecting structured feedback, viewing response analytics, and exporting survey results.
 
-Currently, two official plugins are available:
+Built as an internship project using React and Supabase.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Project Overview
 
-## React Compiler
+The Online Feedback & Survey Platform provides a simple way to create feedback surveys and collect responses digitally.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The platform allows users to:
 
-## Expanding the ESLint configuration
+- Create surveys
+- Add different types of questions
+- Submit survey responses
+- Provide additional suggestions or comments
+- View collected responses and summarized results
+- Export survey results as a CSV file
+- Store survey data and responses using Supabase
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+### Survey Creation
+- Create surveys with a title and description
+- Add multiple questions
+- Reusable survey builder interface
+- Question validation before saving
+
+### Supported Question Types
+- Multiple Choice
+- Short Answer
+- Rating (1–5)
+- Yes / No
+
+### Feedback Collection
+- User-friendly survey form
+- Required question validation
+- Additional suggestions/comments field
+- Response data stored in Supabase
+
+### Results Dashboard
+- View total surveys
+- View total responses
+- View response counts for each survey
+- View answer distribution for supported question types
+- View short-answer responses
+- View additional suggestions/comments
+
+### CSV Export
+- Export collected survey results
+- CSV contains survey name, question, and answer data
+
+### Responsive Design
+- Clean and modern interface
+- Responsive layout for different screen sizes
+- Clear empty, loading, and error states
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React
+- JavaScript
+- HTML
+- CSS
+- Vite
+
+### Backend / Database
+- Supabase
+- PostgreSQL
+
+### Development Tools
+- Git
+- GitHub
+- ESLint
+- npm
+
+## 🗂️ Project Structure
+
+```text
+online-feedback-and-survey-platform/
+│
+├── public/
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── ResultsDashboard.jsx
+│   │   ├── SurveyBuilder.jsx
+│   │   └── SurveyForm.jsx
+│   │
+│   ├── lib/
+│   │   └── supabase.js
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── README.md
+└── vite.config.js
